@@ -1,0 +1,9 @@
+$breakpoint-mobile: 375px;
+$breakpoint-desktop: 1440px;
+
+body {
+  font-size: 18px;
+}
+
+@media (min-width: $breakpoint-desktop) {
+}
