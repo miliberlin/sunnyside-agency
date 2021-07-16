@@ -156,6 +156,40 @@ body {
       color: $very-dark-desaturated-blue;
     }
   }
+  section#testimonials {
+    h2 {
+      text-transform: uppercase;
+      font-family: $font-serif;
+      font-weight: 600;
+      color: $grayish-blue;
+      text-align: center;
+      margin: 100px 0 70px;
+    }
+    .testimonial-cards {
+      display: flex;
+      justify-content: center;
+      & > * {
+        text-align: center;
+      }
+      .testimonial-card {
+        max-width: 300px;
+        margin: 20px;
+        img {
+          border-radius: 50%;
+          max-height: 100px;
+        }
+        .testimonial-author {
+          p:first-of-type {
+            font-family: $font-serif;
+            font-weight: 600;
+          }
+          p:last-of-type {
+            color: $grayish-blue;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media (min-width: $breakpoint-desktop) {

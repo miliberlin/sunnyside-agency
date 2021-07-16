@@ -136,5 +136,35 @@ body section#grid .tile-white {
   background-color: white;
   color: #23303e;
 }
+body section#testimonials h2 {
+  text-transform: uppercase;
+  font-family: "Fraunces", serif;
+  font-weight: 600;
+  color: #a7abae;
+  text-align: center;
+  margin: 100px 0 70px;
+}
+body section#testimonials .testimonial-cards {
+  display: flex;
+  justify-content: center;
+}
+body section#testimonials .testimonial-cards > * {
+  text-align: center;
+}
+body section#testimonials .testimonial-cards .testimonial-card {
+  max-width: 300px;
+  margin: 20px;
+}
+body section#testimonials .testimonial-cards .testimonial-card img {
+  border-radius: 50%;
+  max-height: 100px;
+}
+body section#testimonials .testimonial-cards .testimonial-card .testimonial-author p:first-of-type {
+  font-family: "Fraunces", serif;
+  font-weight: 600;
+}
+body section#testimonials .testimonial-cards .testimonial-card .testimonial-author p:last-of-type {
+  color: #a7abae;
+}
 
 /*# sourceMappingURL=style.css.map */
