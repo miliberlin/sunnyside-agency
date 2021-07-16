@@ -13,6 +13,9 @@ body nav {
 body nav #logo {
   width: 20%;
 }
+body nav #logo path {
+  fill: white;
+}
 body nav ul#nav-items {
   width: 80%;
   display: flex;
@@ -165,6 +168,43 @@ body section#testimonials .testimonial-cards .testimonial-card .testimonial-auth
 }
 body section#testimonials .testimonial-cards .testimonial-card .testimonial-author p:last-of-type {
   color: #a7abae;
+}
+body footer #footer-imgs {
+  display: flex;
+}
+body footer #footer-imgs img {
+  width: 25vw;
+  height: 60vh;
+  object-fit: cover;
+}
+body footer .logo {
+  width: 100%;
+  margin: 50px 0 20px;
+}
+body footer .logo path {
+  fill: #458c7e;
+}
+body footer .footer-text {
+  background-color: #90d4c5;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+}
+body footer .footer-text ul {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  width: 100%;
+}
+body footer .footer-text ul li {
+  list-style: none;
+  padding: 10px;
+  margin: 10px;
+}
+body footer .footer-text ul li a {
+  text-decoration: none;
+  color: #458c7e;
 }
 
 /*# sourceMappingURL=style.css.map */
