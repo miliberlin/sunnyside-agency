@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap");
 body {
   font-size: 18px;
+  font-family: "Barlow", sans-serif;
+  font-weight: 700;
 }
 body nav {
   padding: 15px 20px;
@@ -59,6 +61,80 @@ body section#hero #hero-headline h1 {
   letter-spacing: 0.3rem;
   color: white;
   padding: 10vh;
+}
+body section#grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+body section#grid .tile {
+  box-sizing: border-box;
+  width: 50vw;
+  height: 80vh;
+  padding: 5%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+body section#grid .tile h2, body section#grid .tile h3 {
+  font-family: "Fraunces", serif;
+  font-weight: 600;
+}
+body section#grid .tile a.underline {
+  text-decoration: none;
+  color: #23303e;
+  text-transform: uppercase;
+  font-family: "Fraunces", serif;
+  font-weight: 600;
+  position: relative;
+  z-index: 1;
+}
+body section#grid .tile a.underline:after {
+  display: inline-block;
+  position: absolute;
+  border-radius: 15px;
+  content: "";
+  width: 111%;
+  height: 0.8rem;
+  left: -0.4rem;
+  bottom: -0.3rem;
+  z-index: -1;
+}
+body section#grid .tile a.underline.underline-yellow:after {
+  background-color: rgba(250, 212, 0, 0.3);
+}
+body section#grid .tile a.underline.underline-pink:after {
+  background-color: rgba(254, 120, 103, 0.3);
+}
+body section#grid .tile:nth-of-type(2) {
+  background-image: url("../images/desktop/image-transform.jpg");
+}
+body section#grid .tile:nth-of-type(3) {
+  background-image: url("../images/desktop/image-stand-out.jpg");
+}
+body section#grid .tile:nth-of-type(5), body section#grid .tile:nth-of-type(6) {
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+body section#grid .tile:nth-of-type(5) h3, body section#grid .tile:nth-of-type(6) h3 {
+  font-size: 1.6rem;
+}
+body section#grid .tile:nth-of-type(5) h3, body section#grid .tile:nth-of-type(5) p, body section#grid .tile:nth-of-type(6) h3, body section#grid .tile:nth-of-type(6) p {
+  text-align: center;
+  max-width: 400px;
+}
+body section#grid .tile:nth-of-type(5) {
+  background-image: url("../images/desktop/image-graphic-design.jpg");
+  color: #25564b;
+}
+body section#grid .tile:nth-of-type(6) {
+  background-image: url("../images/desktop/image-photography.jpg");
+  color: #19536b;
+}
+body section#grid .tile-white {
+  background-color: white;
+  color: #23303e;
 }
 
 /*# sourceMappingURL=style.css.map */
