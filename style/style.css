@@ -44,14 +44,21 @@ body nav ul#nav-items li a.contact-btn:hover {
 body section#hero {
   height: 100vh;
   width: 100vw;
-  background: url("../images/desktop/image-header.jpg") no-repeat;
+  background-image: url("../images/desktop/image-header.jpg");
+  background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
-body section#hero h1#hero-headline {
+body section#hero #hero-headline {
+  text-align: center;
+}
+body section#hero #hero-headline h1 {
   text-transform: uppercase;
   font-family: "Fraunces", serif;
   font-weight: 600;
+  letter-spacing: 0.3rem;
   color: white;
+  padding: 10vh;
 }
 
 /*# sourceMappingURL=style.css.map */
