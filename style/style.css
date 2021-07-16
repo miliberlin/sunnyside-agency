@@ -179,7 +179,7 @@ body footer #footer-imgs img {
 }
 body footer .logo {
   width: 100%;
-  margin: 50px 0 20px;
+  margin-bottom: 20px;
 }
 body footer .logo path {
   fill: #458c7e;
@@ -190,6 +190,7 @@ body footer .footer-text {
   justify-content: center;
   text-align: center;
   flex-wrap: wrap;
+  padding: 40px 0;
 }
 body footer .footer-text ul {
   display: flex;
@@ -205,6 +206,10 @@ body footer .footer-text ul li {
 body footer .footer-text ul li a {
   text-decoration: none;
   color: #458c7e;
+}
+body .attribution {
+  text-align: center;
+  padding: 10px 0;
 }
 
 /*# sourceMappingURL=style.css.map */
