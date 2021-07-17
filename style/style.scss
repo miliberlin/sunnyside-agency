@@ -57,6 +57,7 @@ body {
               cursor: pointer;
               background-color: rgba($white, 0.3);
               color: $white;
+              transition: all 300ms;
             }
           }
         }
@@ -117,11 +118,22 @@ body {
           bottom: -0.3rem;
           z-index: -1;
         }
+        &:hover {
+          cursor: pointer;
+        }
         &.underline-yellow:after {
           background-color: rgba($yellow, 0.3);
+          transition: background-color 400ms;
+        }
+        &.underline-yellow:hover:after {
+          background-color: $yellow;
         }
         &.underline-pink:after {
           background-color: rgba($soft-red, 0.3);
+        }
+        &.underline-pink:hover:after {
+          background-color: $soft-red;
+          transition: background-color 400ms;
         }
       }
       &:nth-of-type(2) {
@@ -228,6 +240,19 @@ body {
           a {
             text-decoration: none;
             color: $dark-moderate-cyan;
+            &:hover {
+              color: $white;
+              transition: color 300ms;
+            }
+          }
+          path {
+            fill: $dark-moderate-cyan;
+          }
+          &:hover {
+            path {
+              fill: $white;
+              transition: fill 300ms;
+            }
           }
         }
       }
