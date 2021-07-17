@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap");
 
-$breakpoint-mobile: 375px;
+$breakpoint-mobile: 500px;
 $breakpoint-desktop: 1440px;
 $font-sans-serif: "Barlow", sans-serif;
 $font-serif: "Fraunces", serif;
@@ -264,5 +264,24 @@ body {
   }
 }
 
-@media (min-width: $breakpoint-desktop) {
+@media (max-width: $breakpoint-mobile) {
+  body {
+    nav {
+      ul#nav-items {
+        display: none;
+      }
+    }
+    section#grid {
+      display: flex;
+      flex-wrap: wrap;
+      .tile {
+        width: 100vw;
+        height: 100vh;
+        max-height: 500px;
+        &:nth-of-type(2) {
+          order: -1;
+        }
+      }
+    }
+  }
 }

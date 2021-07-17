@@ -235,4 +235,22 @@ body .attribution {
   padding: 10px 0;
 }
 
+@media (max-width: 500px) {
+  body nav ul#nav-items {
+    display: none;
+  }
+  body section#grid {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  body section#grid .tile {
+    width: 100vw;
+    height: 100vh;
+    max-height: 500px;
+  }
+  body section#grid .tile:nth-of-type(2) {
+    order: -1;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
