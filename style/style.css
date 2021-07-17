@@ -251,6 +251,13 @@ body .attribution {
   body section#grid .tile:nth-of-type(2) {
     order: -1;
   }
+  body section#testimonials .testimonial-cards {
+    flex-wrap: wrap;
+  }
+  body section#testimonials .testimonial-cards .testimonial-card {
+    width: 100%;
+    max-width: 100vw;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

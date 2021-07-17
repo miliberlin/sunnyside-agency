@@ -283,5 +283,14 @@ body {
         }
       }
     }
+    section#testimonials {
+      .testimonial-cards {
+        flex-wrap: wrap;
+        .testimonial-card {
+          width: 100%;
+          max-width: 100vw;
+        }
+      }
+    }
   }
 }
