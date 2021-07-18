@@ -26,6 +26,9 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    #menu-btn {
+      display: none;
+    }
     #logo {
       width: 20%;
       path {
@@ -60,9 +63,6 @@ body {
               transition: all 300ms;
             }
           }
-        }
-        &#menu-btn {
-          display: none;
         }
       }
     }
@@ -270,16 +270,19 @@ body {
 @media (max-width: $breakpoint-mobile) {
   body {
     nav {
-      ul#nav-items {
-        li {
-          display: none;
-          &#menu-btn {
-            display: block;
-            &:hover {
-              cursor: pointer;
-            }
-          }
+      #logo {
+        width: 80%;
+      }
+      #menu-btn {
+        display: block;
+        width: 20%;
+        text-align: right;
+        &:hover {
+          cursor: pointer;
         }
+      }
+      ul#nav-items {
+        display: none;
       }
     }
     section#grid {

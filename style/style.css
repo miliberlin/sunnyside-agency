@@ -10,6 +10,9 @@ body nav {
   justify-content: space-between;
   align-items: center;
 }
+body nav #menu-btn {
+  display: none;
+}
 body nav #logo {
   width: 20%;
 }
@@ -46,9 +49,6 @@ body nav ul#nav-items li a.contact-btn:hover {
   background-color: rgba(255, 255, 255, 0.3);
   color: white;
   transition: all 300ms;
-}
-body nav ul#nav-items li#menu-btn {
-  display: none;
 }
 body section#hero {
   height: 100vh;
@@ -239,14 +239,19 @@ body .attribution {
 }
 
 @media (max-width: 500px) {
-  body nav ul#nav-items li {
-    display: none;
+  body nav #logo {
+    width: 80%;
   }
-  body nav ul#nav-items li#menu-btn {
+  body nav #menu-btn {
     display: block;
+    width: 20%;
+    text-align: right;
   }
-  body nav ul#nav-items li#menu-btn:hover {
+  body nav #menu-btn:hover {
     cursor: pointer;
+  }
+  body nav ul#nav-items {
+    display: none;
   }
   body section#grid {
     display: flex;
