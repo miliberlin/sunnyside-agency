@@ -47,6 +47,9 @@ body nav ul#nav-items li a.contact-btn:hover {
   color: white;
   transition: all 300ms;
 }
+body nav ul#nav-items li#menu-btn {
+  display: none;
+}
 body section#hero {
   height: 100vh;
   width: 100vw;
@@ -236,8 +239,14 @@ body .attribution {
 }
 
 @media (max-width: 500px) {
-  body nav ul#nav-items {
+  body nav ul#nav-items li {
     display: none;
+  }
+  body nav ul#nav-items li#menu-btn {
+    display: block;
+  }
+  body nav ul#nav-items li#menu-btn:hover {
+    cursor: pointer;
   }
   body section#grid {
     display: flex;
@@ -257,6 +266,14 @@ body .attribution {
   body section#testimonials .testimonial-cards .testimonial-card {
     width: 100%;
     max-width: 100vw;
+  }
+  body footer #footer-imgs {
+    flex-wrap: wrap;
+  }
+  body footer #footer-imgs img {
+    width: 50vw;
+    height: 50vh;
+    max-height: 300px;
   }
 }
 
