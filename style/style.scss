@@ -270,6 +270,7 @@ body {
 @media (max-width: $breakpoint-mobile) {
   body {
     nav {
+      position: relative;
       #logo {
         width: 80%;
       }
@@ -283,6 +284,25 @@ body {
       }
       ul#nav-items {
         display: none;
+        position: absolute;
+        box-sizing: border-box;
+        width: 90vw;
+        padding: 50px;
+        top: 100px;
+        flex-flow: column;
+        align-items: center;
+        background-color: $white;
+        li {
+          a {
+            color: $dark-grayish-blue;
+            &.contact-btn {
+              background-color: $yellow;
+            }
+          }
+          &:last-of-type {
+            margin-top: 30px;
+          }
+        }
       }
     }
     section#grid {

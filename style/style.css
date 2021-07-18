@@ -239,6 +239,9 @@ body .attribution {
 }
 
 @media (max-width: 500px) {
+  body nav {
+    position: relative;
+  }
   body nav #logo {
     width: 80%;
   }
@@ -252,6 +255,23 @@ body .attribution {
   }
   body nav ul#nav-items {
     display: none;
+    position: absolute;
+    box-sizing: border-box;
+    width: 90vw;
+    padding: 50px;
+    top: 100px;
+    flex-flow: column;
+    align-items: center;
+    background-color: white;
+  }
+  body nav ul#nav-items li a {
+    color: #818498;
+  }
+  body nav ul#nav-items li a.contact-btn {
+    background-color: #fad400;
+  }
+  body nav ul#nav-items li:last-of-type {
+    margin-top: 30px;
   }
   body section#grid {
     display: flex;
